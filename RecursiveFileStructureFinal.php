@@ -17,10 +17,10 @@ $dbname = "c:\\";
 class FilePath {
 
 
-public $folder_id;
-public $parent_folder;
-public $full_file_path;
-public $file_name;
+	public $folder_id;
+	public $parent_folder;
+	public $full_file_path;
+	public $file_name;
 
 function __construct($full_file_path, $folder_id, $parent_folder,  $file_name) {
 	$this->full_file_path = $full_file_path;
@@ -31,19 +31,19 @@ function __construct($full_file_path, $folder_id, $parent_folder,  $file_name) {
   }
 
 function getFilepath(){
-return   $this->full_file_path;
+	return   $this->full_file_path;
 }
 
 function getFolderID(){
-return   $this->folder_id;
+	return   $this->folder_id;
 }
 
 function getParentFolderID(){
-return   $this->parent_folder;
+	return   $this->parent_folder;
 }
 
 function getFileName(){
-return 	 $this->file_name;
+	return 	 $this->file_name;
 }
 
 public function FolderDepth($depthFolder){
